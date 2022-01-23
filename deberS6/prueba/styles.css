@@ -1,0 +1,43 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(109, 38, 38);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+.content{
+    display:flex;
+    filter: blur(4px) contrast(60px);
+}
+.content div{
+    width: 100px;
+    height: 100px;
+    background-color:rgb(35, 165, 197);
+    border-radius:50%;
+    
+}
+
+.content div:nth-child(1) {
+    animation: bola1 4s ease-in-out infinite;
+}
+.content div:nth-child(3) {
+    animation: bola3 4s linear infinite;
+}
+
+@keyframes bola1 {
+    from{
+        transform: rotate(0deg) translateX(50px);
+    }to{
+       transform: rotate(360deg) translateX(50px);
+    }
+}
+@keyframes bola2 {}
+

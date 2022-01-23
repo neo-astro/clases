@@ -1,0 +1,11 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="100px"
+    height="400px" 
+    style="
+    background-color:red;
+    border:1px solid #fff; "
+
+    >
+    <rect width="50" height="450"/>
+</svg>
