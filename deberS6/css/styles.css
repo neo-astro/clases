@@ -296,7 +296,6 @@ div h1:nth-child(2){
     font-weight: bold;
     grid-area:"medio";
     display:flex;
-    background-color:rgb(128, 22, 22);
     position:relative;
     flex-direction:column;
     justify-content:center;
@@ -409,25 +408,43 @@ div h1:nth-child(2){
 
 
 
-/*-------derecha-----------*/
+/*-------ilera derecha-----------*/
 .ileraDerecha {
     grid-area: "derecha";
-    background-color:rgb(9, 117, 41);
 }
 
 
 .derecha1 , .derecha2 {
     width: 100%;
     height: 200px;
-    background-color:#64dfdfff;
 }
-
+.contenidoder1 {
+    margin-top: 10%;
+}
+.contenidoder2{
+    margin-top: 50%;
+}
 
 
 /*-----------ilera izquierda----------*/
 .ileraIzquierda {
     grid-area: "izquierda";
-    background-color:rgb(97, 117, 9);
+}
+
+.tituloizq{
+    color: rgb(16, 163, 231);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center
+}
+.textoizq {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center
+}
+.contenidoizq{
+    margin-top:51.5%
 }
 
 /*----------------Habilidades----------------*/
@@ -471,17 +488,80 @@ div h1:nth-child(2){
     background-color:#fff;
     box-shadow: 2px 2px 2px 2px rgb(224, 224, 224)
 }
+
+.containerHabilidades div:hover{
+    background-color:var(--slate-blue);
+    color: #fff;
+}
+
 /*--------Cards------------------*/
+.containerMainCursos {
+    width: 100%;
+    height: 800px;
+    background: linear-gradient(#fff,var(--slate-blue));
+    z-index: -2;
+    justify-content: center;
+}
+
+.tituloCursos {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--slate-blue);
+}
+
+
+
+.cards {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.cards::-webkit-scrollbar {
+    width: 0;
+    height:0
+}
+
+.item{
+    height:354px;
+    border-radius: 14px;
+    margin-left: 20px;
+    background-color: var(--slate-blue);
+    margin-top: 50px;
+    animation:marcos 2s linear infinite; 
+    transition:1s;
+}
+
+.item:hover {
+    height: 450px;
+}
+
+
+.imagen_curso {
+    margin: 0 0;
+    height: 350px;
+    border-radius: 14px;
+}
 
 
 /*---------Formulario------------*/
+.containerMainFormulario{
+    margin-top:-350px;
+}
+
 .containerFormulario{
     margin-top:-5px;
     width: 100%;
     height: 300px;
     background-color:var(--slate-blue); 
-    
+    transition: 1s
 }
+
+
+
 .containerDeFormulario{
     color: #fff;
     font-weight: bold;
@@ -497,7 +577,7 @@ div h1:nth-child(2){
     margin-right: 60px;
 }
 
-form input{
+section input{
     background-color: rgb(255, 255, 255);
     border-radius: 4px;
     width: 220px;
@@ -508,6 +588,17 @@ textarea{
     font-weight: bold;
     width:220px;
 }
-.Boton:hover{
+.boton:hover{
     color: rgb(20, 155, 20);
+}
+
+.t2,.descripcion {
+    color: #fff;
+    font-size: 20px; 
+    font-weight: bold;
+    text-align: center;
+}
+
+.descripcion{
+    font-size: 16px;
 }
