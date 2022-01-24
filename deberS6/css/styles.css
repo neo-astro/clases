@@ -433,7 +433,7 @@ div h1:nth-child(2){
 
 .tituloizq{
     color: rgb(16, 163, 231);
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     text-align: center
 }
@@ -532,12 +532,13 @@ div h1:nth-child(2){
     background-color: var(--slate-blue);
     margin-top: 50px;
     animation:marcos 2s linear infinite; 
-    transition:1s;
+    transition: 1s;
 }
 
-.item:hover {
+.item:hover{
     height: 450px;
 }
+
 
 
 .imagen_curso {
@@ -597,8 +598,21 @@ textarea{
     font-size: 20px; 
     font-weight: bold;
     text-align: center;
+    
+    
 }
+
+
 
 .descripcion{
     font-size: 16px;
+}
+
+
+/*----------query--------------*/
+@media screen and (max-width:375px){
+    .containerDeFormulario{
+        display:flex;
+        flex-direction: column;
+    }
 }
