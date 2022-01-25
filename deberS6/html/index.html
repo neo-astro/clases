@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <script src="../js/main.js"></script>
+    <link rel="stylesheet" href="../css/styles.css"> 
+    <script src="../js/main.js" defer></script>
 
 </head>
 <body>
@@ -220,7 +220,7 @@
                 </div>
                 
                 <div class="formulario">
-                    <section  id="FORM">
+                    <form  id="FORM">
                     <label for="NOMBRE">
                         <span>Nombre</span>
                         <br>
@@ -232,9 +232,10 @@
                         <br>
                         <span>Email</span>
                         <br>
-                        <input  type="text" id="EMAIL" placeholder="ejemplo: micorreo@hotmail.com" required pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.([a-zA-Z0-9-]+)$"/>
+                        <input  type="text" id="EMAIL" placeholder="ejemplo: micorreo@hotmail.com" required pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z]+?$"/>
                     </label>
                     <label for="MENSAJE">
+                        
                         <br>
                         <span>Mensaje</span>
                         <br>
@@ -242,8 +243,8 @@
 
                     </label>
                     <br>
-                    <input class="boton" id="BOTON" type="submit" value="Enviar" required onclick="mostrar() "/>  
-                </section>
+                    <input class="boton" id="BOTON" type="submit" value="Enviar" onclick='msm()' />  
+                </form>
                     
             
                 </div>
