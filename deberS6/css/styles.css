@@ -237,7 +237,7 @@ div h1:nth-child(2){
 .containerGrid {
     width:100%;
     margin-top: -20px;
-    height: 700px;
+    min-height: 700px;
     background-color:var(--slate-blue);
     clip-path: polygon(50% 14%, 100% 0, 100% 35%, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0% 35%, 0 0);
     display:flex;
@@ -250,17 +250,13 @@ div h1:nth-child(2){
     grid-template-columns: 33.2% 33.6% 33.2%;
     grid-template-areas: 
     "izquierda medio derecha"
-    "izquierda medio derecha"
-    "izquierda medio derecha"
-    "izquierda medio derecha"
-    "izquierda medio derecha"
-    "izquierda medio derecha";
+    
 }
 /*--------ilera medio--------------*/
 .ileraMedio{
     color: #fff;
     font-weight: bold;
-    grid-area:"medio";
+    grid-area:medio;
     display:flex;
     position:relative;
     flex-direction:column;
@@ -376,7 +372,7 @@ div h1:nth-child(2){
 
 /*-------ilera derecha-----------*/
 .ileraDerecha {
-    grid-area: "derecha";
+    grid-area: derecha;
 }
 
 
@@ -394,7 +390,7 @@ div h1:nth-child(2){
 
 /*-----------ilera izquierda----------*/
 .ileraIzquierda {
-    grid-area: "izquierda";
+    grid-area: izquierda;
 }
 
 .tituloizq{
@@ -522,7 +518,7 @@ div h1:nth-child(2){
 .containerFormulario{
     margin-top:-5px;
     width: 100%;
-    height: 300px;
+    min-height: 300px;
     background-color:var(--slate-blue); 
     transition: 1s
 }
@@ -539,10 +535,11 @@ div h1:nth-child(2){
 
 }
 .textoFormulario{
+    margin-right:30px;
     font-weight: bold;
     color: #fff;
     font-size:20px;
-    margin-right: 60px;
+    
 }
 
 form input ,.boton{
@@ -577,6 +574,9 @@ textarea{
 
 
 /* ---------model--------------*/
+
+
+
 .model{
 
     border-radius: 12px;
@@ -584,8 +584,8 @@ textarea{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    height: 90%;
+    width: 25vw;
+    height: 60vh;
     background: linear-gradient(var(--slate-blue),#fff);
 }
 
@@ -602,12 +602,11 @@ textarea{
 }
 
 .boton_model {
-    /* margin: 30px; */
     width: 100px;
     height: 40px;
     color: #fff;
-    /* border: solid var(--slate-blue);
-    border-radius: 4px; */
+    border: solid var(--slate-blue);
+    border-radius: 4px; 
     background-color: var(--slate-blue);
 }
 
@@ -634,13 +633,22 @@ textarea{
 
 /*----------query--------------*/
 @media (max-width:750px) {
+    .body{ 
+        overflow-x: hidden;
+    }
     .containerDeFormulario{
         display:flex;
-        flex-direction: column;
+        
         flex-wrap: wrap;
         width:auto;
         height:auto;
-        justify-content: center;
+        
+    }
+    .textoFormulario{
+        margin-right: 0px ;
+        text-align: center;
+        width: 100vw;
+        margin-bottom: 10px;
     }
     .containerMain{
         display:block;
@@ -654,6 +662,42 @@ textarea{
     }
     .ImagenPerfil2{
         transform: scale(0.6);
+    }
+
+    .cards{
+        overflow-y: hidden;
+    }
+
+    .item {
+        transform: scale(0.6);
+        margin-top:10px
+    }
+    
+    .model {
+        width: 80%;
+        height: 80%;
+        
+    }
+    .model_titulo{
+        text-align: center;
+    }
+    .containerGrid{
+        flex-direction: column;
+    }
+    
+    .ileraDerecha, .ileraIzquierda, .ileraMedio{
+        grid-area: none;
+    }
+    .ileraDerecha div{
+        margin-top:10%;
+    }
+
+    .elArbol, .containerParticulas , .containerParticulas2 {
+        display: none;
+    }
+
+    .elGrid{
+        display: block;
     }
 }
 

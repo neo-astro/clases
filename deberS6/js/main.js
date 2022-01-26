@@ -1,23 +1,3 @@
-// function msm(){
-//     preventDefault();
-//     $nombre = document.getElementById(`NOMBRE`).value 
-//     $mensaje = document.getElementById(`MENSAJE`).value 
-//     $email = document.getElementById(`EMAIL`).value 
-//     $model = document.createElement('div')
-//     $img = document.getElementById(`IMG_PERFIL`)
-//     $div_informacion = document.createElement('div')
-//     $div_informacion.innerHTML = `<p>Tu nombre es: ${$nombre}}<br>Tu email es: ${$email}<br>Tu mensaje es: ${$mensaje}<br>/p>`
-//     $model.appendChild($img)
-//     $model.appendChild($div_informacion)
-//     $model.classList.add('Model')
-//     document.body.appendChild($model)
-// }
-
-
-
-
-
-
 document.addEventListener('submit', (msm)=>{
 
     msm.preventDefault();
@@ -26,7 +6,7 @@ document.addEventListener('submit', (msm)=>{
     $email = document.getElementById(`EMAIL`).value 
 
     $container_model = document.createElement('div')
-    $container_model.class = "elcontainerModel"
+    $container_model.class = "containerModel"
     $container_model.classList.add('container_model')
     
     $boton = document.createElement('button')
@@ -34,7 +14,6 @@ document.addEventListener('submit', (msm)=>{
     $boton.class = "boton_model"
     $boton.classList.add('boton_model')
     
-
     $model  = document.createElement('div')
     $model.classList.add('model')
 
@@ -49,15 +28,13 @@ document.addEventListener('submit', (msm)=>{
     $model.appendChild($boton)
     $container_model.appendChild($model)
     
-    
-
     window.document.body.appendChild($container_model)
     document.addEventListener("click", function(e) {
         window.document.body.removeChild($container_model)
         document.getElementById(`NOMBRE`).value = ""
         document.getElementById(`MENSAJE`).value = ""
         document.getElementById(`EMAIL`).value = ""
-        
     })
 })
+
 
