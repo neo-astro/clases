@@ -15,11 +15,11 @@
 
 
 
-    
 
 
 
 document.addEventListener('submit', (msm)=>{
+
     msm.preventDefault();
     $nombre = document.getElementById(`NOMBRE`).value 
     $mensaje = document.getElementById(`MENSAJE`).value 
@@ -32,9 +32,6 @@ document.addEventListener('submit', (msm)=>{
     $boton = document.createElement('button')
     $boton.textContent= 'ACEPTAR'
     $boton.class = "boton_model"
-    
-   
-    
     $boton.classList.add('boton_model')
     
 
@@ -55,5 +52,12 @@ document.addEventListener('submit', (msm)=>{
     
 
     window.document.body.appendChild($container_model)
+    document.addEventListener("click", function(e) {
+        window.document.body.removeChild($container_model)
+        document.getElementById(`NOMBRE`).value = ""
+        document.getElementById(`MENSAJE`).value = ""
+        document.getElementById(`EMAIL`).value = ""
+        
+    })
 })
 
