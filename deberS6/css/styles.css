@@ -666,6 +666,7 @@ textarea{
     
     .ImagenPerfil2{
         transform: scale(0.6);
+        margin-left:24px;
     }
 
     .cards{
@@ -715,7 +716,7 @@ textarea{
         display: none;
     }
     .contenidoder2{
-        margin-bottom: -185px;
+        margin-bottom: -200px;
     }
     .contenidoder1{
         
@@ -737,8 +738,10 @@ textarea{
         font-size:16px;
     }
     .botonMain{
+        margin-top: 10px;
+        margin-left: auto;
+        position: relative;
         width:150px;
-        margin: 0px 0px;
     }
     .mainTexto{
         width:100vw;
@@ -763,6 +766,9 @@ textarea{
     }
     .textomain{
         margin-top:-7.5px
+    }
+    .efecto{
+        transform: scaleY(0.28);
     }
 }
 
