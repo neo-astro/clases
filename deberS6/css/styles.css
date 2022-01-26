@@ -683,6 +683,8 @@ textarea{
     }
     .containerGrid{
         flex-direction: column;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
     }
     
     .ileraDerecha, .ileraIzquierda, .ileraMedio{
@@ -698,6 +700,15 @@ textarea{
 
     .elGrid{
         display: block;
+    }
+    .experienciaTitulo{
+        margin-bottom:-150px;
+    }
+    .containerArbol{
+        display: none;
+    }
+    .contenidoder2{
+        margin-bottom: 10px;
     }
 }
 
