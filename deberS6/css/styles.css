@@ -118,6 +118,7 @@
     padding: 0 40px;
 }
 .mainTexto{
+    margin-top:240px;
     height: 80%;
     width: 50%;   
     display: flex;
@@ -127,8 +128,11 @@
 .tituloTextoMain{
     margin-top :-80px
 }
+.textomain{
+    margin-top:50px
+}
 
-.mainTexto div{
+.mainTexto div p,h1{
     margin-top: -50px;
     font-size:40px;
     position: relative;
@@ -652,14 +656,14 @@ textarea{
     }
     .containerMain{
         display:block;
+        margin: 0 0;
+        padding: 0 0;
     }
-    .tituloTextoMain h1{
+    .tituloTextoMain {
         position: relative;
+        font-size: 18px;
     }
-    .containerMain div{
-        font-size: 16px;
-        margin: auto auto;
-    }
+    
     .ImagenPerfil2{
         transform: scale(0.6);
     }
@@ -678,6 +682,7 @@ textarea{
         height: 80%;
         
     }
+
     .model_titulo{
         text-align: center;
     }
@@ -690,8 +695,8 @@ textarea{
     .ileraDerecha, .ileraIzquierda, .ileraMedio{
         grid-area: none;
     }
-    .ileraDerecha div{
-        margin-top:10%;
+    .contenidoizq {
+        margin-top: -27.5%;        
     }
 
     .elArbol, .containerParticulas , .containerParticulas2 {
@@ -699,7 +704,9 @@ textarea{
     }
 
     .elGrid{
-        display: block;
+        height:auto;
+        display: flex;
+        flex-direction:column;
     }
     .experienciaTitulo{
         margin-bottom:-150px;
@@ -708,7 +715,55 @@ textarea{
         display: none;
     }
     .contenidoder2{
-        margin-bottom: 10px;
+        margin-bottom: -185px;
+    }
+    .contenidoder1{
+        
+        margin-top: 100px;
+    }
+
+    
+    .ileraIzquierda{
+        order: 2;
+    }
+    .ileraDerecha{
+        display: flex;
+        flex-direction: column;
+    }
+    .textoizq{
+        margin-bottom: -15px
+    }
+    .textmain{
+        font-size:16px;
+    }
+    .botonMain{
+        width:150px;
+        margin: 0px 0px;
+    }
+    .mainTexto{
+        width:100vw;
+        padding: 0 25%;
+        margin-top: 0;
+    }
+    .tituloTextoMain{
+        margin-top:20px;
+        margin-bottom:0;
+    }
+
+    .tituloTextoMain h1{
+        width:100%;
+        margin-top:-24px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .mainTexto div p {
+        margin-top: 10px;
+        font-size: 16px;
+        position: relative;
+    }
+    .textomain{
+        margin-top:-7.5px
     }
 }
+
 
