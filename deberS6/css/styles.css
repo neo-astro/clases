@@ -576,6 +576,62 @@ textarea{
 }
 
 
+/* ---------model--------------*/
+.model{
+
+    border-radius: 12px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 90%;
+    background: linear-gradient(var(--slate-blue),#fff);
+}
+
+.model_titulo{
+    font-size: 22px;
+    color: var(--slate-blue)
+}
+
+.model p{
+    font-size:20px;
+    font-weight:bold;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.boton_model {
+    /* margin: 30px; */
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    /* border: solid var(--slate-blue);
+    border-radius: 4px; */
+    background-color: var(--slate-blue);
+}
+
+.model_imagen{
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+}
+
+.container_model {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.37);
+    z-index: 9999;
+    position:fixed;
+}
+
+
+
 /*----------query--------------*/
 @media (max-width:750px) {
     .containerDeFormulario{
@@ -600,3 +656,4 @@ textarea{
         transform: scale(0.6);
     }
 }
+
