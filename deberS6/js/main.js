@@ -37,4 +37,36 @@ document.addEventListener('submit', (msm)=>{
     })
 })
 
+$a = document.querySelectorAll("a") 
+$checkbox = document.querySelector('.checkbox')
 
+$a.item(0).addEventListener("click", function(e) {
+    $checkbox.checked = false
+})
+$a.item(1).addEventListener("click", function(e) {
+    $checkbox.checked = false
+})
+$a.item(2).addEventListener("click", function(e) {
+    $checkbox.checked = false
+})
+$a.item(3).addEventListener("click", function(e) {
+    $checkbox.checked = false
+})
+$a.item(4).addEventListener("click", function(e) {
+    $checkbox.checked = false
+})
+
+
+
+
+
+function ver(){
+    $checkbox = document.querySelector('.checkbox')
+    alert($checkbox.checked)
+    
+}
+
+function ver2(){
+    $v = document.querySelector(".containerVinculo")
+    console.log($v);
+}
