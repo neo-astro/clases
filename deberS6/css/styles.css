@@ -47,6 +47,10 @@
 }
 
 /*---------HEADER---------------*/
+
+.botonLateral{
+    display: none
+}
 .containerHeader {
     
     background-color: var(--slate-blue);
@@ -655,6 +659,7 @@ textarea{
         margin-bottom: 10px;
     }
     .containerMain{
+        
         display:block;
         margin: 0 0;
         padding: 0 0;
@@ -768,7 +773,71 @@ textarea{
         margin-top:-7.5px
     }
     .efecto{
-        transform: scaleY(0.28);
+        transform: scaleY(0.9);
+    }
+    .containerHeaderH2{
+        display: none;
+    }
+    #FORM{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    }
+
+    .checkbox{
+        position: relative;
+        opacity: 1
+    }
+
+    .checkbox:checked #menuOpciones{
+        height:100vh;
+    }
+    
+    #hamburguesa{
+        color:#fff;
+        position: absolute;
+    }
+    .botonLateral {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 40px;
+        width: 40px;
+        align-content: center;
+        justify-content:center;
+    }
+    .containerMainHeader {
+        position: fixed;
+        z-index: 10;
+    }
+
+
+    .containerHeaderH2 {
+        
+        font-size: 20px;
+        height: 0vh;
+        width: 100vw;
+        margin-top: 40px;
+        position:fixed;
+        background-color: rgba(94, 96, 206, 0.623);
+        display: flex;
+        flex-wrap: wrap;
+        transition: all 0.7s
+    
+
+    } 
+
+    .containerHeaderH2 a {
+        width:100vw;
+        height:100px;
+        display:none;
+        font-size: 35px;
+        text-align: center;
+        list-style: none;
+    }
+
+    .containerHeaderH2 a:hover{
+        border: none;
+        color:rgb(227, 72, 124)
     }
 }
 
