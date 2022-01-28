@@ -46,6 +46,10 @@
     box-sizing: border-box;
 }
 
+
+
+
+
 /*---------HEADER---------------*/
 #hamburguesa , .checkbox {
     display:none
@@ -475,6 +479,7 @@ div h1:nth-child(2){
     background: linear-gradient(#fff,var(--slate-blue));
     z-index: -2;
     justify-content: center;
+    overflow-y: hidden;
 }
 
 .tituloCursos {
@@ -491,6 +496,7 @@ div h1:nth-child(2){
 .cards {
     display: flex;
     width: 100%;
+    overflow-y: hidden;
     overflow-x: auto;
 }
 
@@ -640,6 +646,21 @@ textarea{
     z-index: 9999;
     position:fixed;
 }
+
+
+   #NOMBRE:focus,
+   #EMAIL:focus,
+   #MENSAJE:focus {
+       border: 3.5px solid rgb(39, 85, 235)
+   }
+
+   #NOMBRE:valid,
+   #EMAIL:valid,
+   #MENSAJE:valid {
+       border: 3.5px solid rgb(33, 218, 27)
+   }
+   
+
 
 
 
@@ -836,7 +857,7 @@ textarea{
         background-color: rgba(94, 96, 206, 0.897);
         display: none;
         flex-wrap: wrap;
-        transition: 1s
+        transition: 1.5s;
     } 
 
     .containerHeaderH2 a {
@@ -849,12 +870,11 @@ textarea{
 
     .containerHeaderH2 a:hover{
         border: none;
-        color:rgb(227, 72, 124)
+        font-size: 45px;
+        color: var(--tufts-blue);
     }
 
-   
-
-
+ 
     .checkbox:checked ~ .containerHeaderH2{
         display:flex;
         height:100vh;

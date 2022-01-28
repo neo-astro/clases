@@ -41,19 +41,33 @@ $a = document.querySelectorAll("a")
 $checkbox = document.querySelector('.checkbox')
 
 $a.item(0).addEventListener("click", function(e) {
-    $checkbox.checked = false
+    setTimeout(function() {
+        $checkbox.checked = false
+    }, 200)
 })
+
 $a.item(1).addEventListener("click", function(e) {
-    $checkbox.checked = false
+    setTimeout(function() {
+        $checkbox.checked = false
+    }, 200)
 })
+
 $a.item(2).addEventListener("click", function(e) {
-    $checkbox.checked = false
+    setTimeout(function() {
+        $checkbox.checked = false
+    }, 200)
 })
+
 $a.item(3).addEventListener("click", function(e) {
-    $checkbox.checked = false
+    setTimeout(function() {
+        $checkbox.checked = false
+    }, 200)
 })
+
 $a.item(4).addEventListener("click", function(e) {
-    $checkbox.checked = false
+    setTimeout(function() {
+        $checkbox.checked = false
+    }, 200)
 })
 
 
