@@ -1,42 +1,51 @@
+$nombre = document.getElementById(`NOMBRE`)
+$mensaje = document.getElementById(`MENSAJE`)
+$email = document.getElementById(`EMAIL`)
+$form = document.getElementById('FORM')
+
 document.addEventListener('submit', (msm)=>{
 
     msm.preventDefault();
-    $nombre = document.getElementById(`NOMBRE`).value 
-    $mensaje = document.getElementById(`MENSAJE`).value 
-    $email = document.getElementById(`EMAIL`).value 
-
+    
+    /*Creando contenedor del modal */
     $container_model = document.createElement('div')
     $container_model.class = "containerModel"
     $container_model.classList.add('container_model')
     
+    /*Creando boton al modal*/ 
     $boton = document.createElement('button')
     $boton.textContent= 'ACEPTAR'
     $boton.class = "boton_model"
     $boton.classList.add('boton_model')
-    
+
+    /*Un div en el que pondre el boton , foto , un div con informacion a mostrar */
     $model  = document.createElement('div')
     $model.classList.add('model')
-
+    
+    /*Creando imagen al modal */
     $imagenPerfil = document.createElement('img')
     $imagenPerfil.src = "../sources/perfil-picture.jpg"
     $imagenPerfil.classList.add('model_imagen')
-
+    /* Un div que tenga el texto a mostrar en el modal*/
     $div_informacion = document.createElement('div')
-    $div_informacion.innerHTML = `<br><h2 class="model_titulo">Informacion que sera enviada</h2><br><p>Al nombre de: ${$nombre}<br>Con el correo: ${$email}<br>El mensaje es:<br> ${$mensaje}<br></p>`
+    $div_informacion.innerHTML = `<br><h2 class="model_titulo">Informacion que sera enviada</h2><br><p>Al nombre de: ${$nombre.value}<br>Con el correo: ${$email.value}<br>El mensaje es:<br> ${$mensaje.value}<br></p>`
+    
+    /*Agg elementos */
     $model.appendChild($imagenPerfil)
     $model.appendChild($div_informacion)
     $model.appendChild($boton)
     $container_model.appendChild($model)
-    
     window.document.body.appendChild($container_model)
-    document.addEventListener("click", function(e) {
-        window.document.body.removeChild($container_model)
-        document.getElementById(`NOMBRE`).value = ""
-        document.getElementById(`MENSAJE`).value = ""
-        document.getElementById(`EMAIL`).value = ""
+
+    /*Escuchando al click del modal para eliminar el modal */
+    $boton.addEventListener("click", function(e) {
+    window.document.body.removeChild($container_model)
+    $form.reset()
     })
+
 })
 
+/*Response menu */
 $a = document.querySelectorAll("a") 
 $checkbox = document.querySelector('.checkbox')
 
@@ -69,18 +78,3 @@ $a.item(4).addEventListener("click", function(e) {
         $checkbox.checked = false
     }, 200)
 })
-
-
-
-
-
-function ver(){
-    $checkbox = document.querySelector('.checkbox')
-    alert($checkbox.checked)
-    
-}
-
-function ver2(){
-    $v = document.querySelector(".containerVinculo")
-    console.log($v);
-}

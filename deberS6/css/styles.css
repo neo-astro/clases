@@ -870,8 +870,8 @@ textarea{
 
     .containerHeaderH2 a:hover{
         border: none;
-        font-size: 45px;
-        color: var(--tufts-blue);
+        font-size: 40px;
+        color: var(--purple);
     }
 
  
