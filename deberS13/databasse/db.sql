@@ -12,7 +12,7 @@ Use db_links;
 CREATE TABLE users(
     id INT(11) NOT NULL,
     username VARCHAR(255) NOT NULL,
-    contraseña VARCHAR(25) NOT NULL,
+    contraseña VARCHAR(70) NOT NULL,
     fullname VARCHAR(255) NOT NULL
 );
 
